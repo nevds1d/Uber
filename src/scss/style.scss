@@ -1,6 +1,8 @@
 * {
 	font-family: 'Roboto', sans-serif;
 }
+$colorBl: #1EACC7;
+$colorRd: #FF5656;
 header {
 	position: relative;
 	height: 53px;
@@ -167,7 +169,7 @@ nav {
 			margin-right: 25px;
 			width: 116px;
 			height: 116px;
-			background: #1EACC7;
+			background: $colorBl;
 			border-radius: 100%;
 		}
 		.benefits_desc {
@@ -177,7 +179,7 @@ nav {
 			font-weight: 400;
 			font-size: 17px;
 			line-height: 21px;
-			color: #1EACC7;
+			color: $colorBl;
 		}
 		.benefits_text {
 			font-weight: 300;
@@ -198,7 +200,7 @@ nav {
         text-align: center;
         color: #222222;
     }
-    .row {
+    .mobile_row {
         margin-top: 32px;
     }
     .mobile_item {
