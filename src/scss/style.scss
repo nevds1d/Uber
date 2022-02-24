@@ -3,6 +3,13 @@
 }
 $colorBl: #1EACC7;
 $colorRd: #FF5656;
+
+@mixin btn_hover {
+	&:hover {
+		background: none;
+		background: $colorBl;
+	}	
+}
 header {
 	position: relative;
 	height: 53px;
@@ -85,6 +92,7 @@ nav {
 		text-transform: uppercase;
 		color: #FFFFFF;
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+		@include btn_hover;
 	}
 }
 .promo {
@@ -129,6 +137,7 @@ nav {
 		text-transform: uppercase;
 		color: #FFFFFF;
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+		@include btn_hover;
 	}
 }
 .benefits {
