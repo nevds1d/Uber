@@ -260,6 +260,28 @@ nav {
             border-radius: 100%;
             margin: 0 auto;
             cursor: pointer;
+			&:before {
+				content: '';
+				display: block;
+				width: 14px;
+				height: 2px;
+				background-color: $colorBl;
+				transition: 0.3s all;
+			}
+			&:after {
+				content: '';
+				display: block;
+				width: 2px;
+				height: 14px;
+				background-color: $colorBl;
+				position: absolute;
+				transition: 0.3s all;	
+			}
+			&:hover {
+				&:before, &:after {
+					background-color: $colorRd;
+				}
+			}
         }
 
 
